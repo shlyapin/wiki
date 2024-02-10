@@ -17,7 +17,7 @@ Host my_machine
 There are a lot of options:
 
 ```
-Host my_options
+Host my_machine
   HostName 123.456.901.234
   IdentityFile ~/.ssh/my_key.pem
   User my_user
