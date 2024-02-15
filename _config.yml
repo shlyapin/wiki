@@ -5,3 +5,6 @@ theme: just-the-docs
 url: https://alshlyapin.github.io/wiki
 
 ga_tracking: G-TQC2SPHKLN
+
+plugins:
+  - jekyll-redirect-from
