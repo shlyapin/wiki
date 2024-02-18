@@ -16,6 +16,4 @@ email: alshlyapin.contact@gmail.com
 
 [GitHub](https://github.com/alshlyapin)
 
-[Telegram](https://t.me/alshlyapin0)
-
 [Facebook](https://www.facebook.com/profile.php?id=100004139956689)
