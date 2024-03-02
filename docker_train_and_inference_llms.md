@@ -19,7 +19,7 @@ This instruction applies specifically to the Dockerfile I provided and may diffe
 
 To install Docker on Ubuntu, follow these instructions:
 - [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
-- [https://docs.docker.com/engine/install/linux-postinstall/(https://docs.docker.com/engine/install/linux-postinstall/)]
+- [https://docs.docker.com/engine/install/linux-postinstall/](https://docs.docker.com/engine/install/linux-postinstall/)
 
 If you succeeded, you can run `docker run hello-world`, and it will print a text starting with "Hello from Docker!"
 
