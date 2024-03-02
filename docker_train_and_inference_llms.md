@@ -18,14 +18,14 @@ This instruction applies specifically to the Dockerfile I provided and may diffe
 # Installation
 
 To install Docker on Ubuntu, follow these instructions:
-- https://docs.docker.com/engine/install/ubuntu/
-- https://docs.docker.com/engine/install/linux-postinstall/
+- [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+- [https://docs.docker.com/engine/install/linux-postinstall/(https://docs.docker.com/engine/install/linux-postinstall/)]
 
 If you succeeded, you can run `docker run hello-world`, and it will print a text starting with "Hello from Docker!"
 
 To make Docker work with Nvidia GPUs, follow these instructions:
-- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
-- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html
+- [https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+- [https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html)
 
 If you succeeded, you can run `sudo docker run --rm --runtime=nvidia --gpus all ubuntu nvidia-smi`, and it will print a table with GPUs.
 
