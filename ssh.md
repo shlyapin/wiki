@@ -48,3 +48,33 @@ scp my_machine:/my/path/my_file.txt my_file.txt
 ```
 
 You need to run it from a machine where the SSH config (with my_machine configuration) is stored.
+
+# Allow two users to push to GitHub using different SSH keys on the same Linux machine
+
+`~/.ssh/config`:
+
+```
+# User 1's GitHub account
+Host github.com-user1
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_user1
+
+# User 2's GitHub account
+Host github.com-user2
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_user2
+```
+
+git clone:
+
+```bash
+# For user 1
+git clone git@github.com-user1:user1/repo_user1.git
+
+# For user 2
+git clone git@github.com-user2:user2/repo_user2.git
+```
+
+After that, any Git commands executed in the repo_user1 folder will utilize user1’s keys, and any Git commands performed in the repo_user2 folder will use user2’s keys.
