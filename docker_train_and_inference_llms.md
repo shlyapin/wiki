@@ -6,14 +6,14 @@ permalink: /docker_train_and_inference_llms
 
 # Introduction
 
-[Link to GitHub with Dockerfile, requirements.txt, and the instructions](https://github.com/alshlyapin/docker_train_and_inference_llms)
+[Link to GitHub with Dockerfile, requirements.txt, and the instructions](https://github.com/shlyapin/docker_train_and_inference_llms)
 
-Docker enables you to run containers, packaging an application along with its dependencies. The primary issue Docker addresses is the common problem where code may not work on another computer. By isolating the application, Docker also minimizes the risk of causing issues on the host system.
+Docker enables you to run containers that package an application along with its dependencies. The primary issue Docker addresses is the common problem where code may not work on another computer. By isolating the application, Docker also minimizes the risk of causing issues on the host system.
 
 - **Docker Host**: The machine (either physical or virtual) where Docker is installed and runs.
 - **Docker Guest**: The containers managed by the Docker host, each providing a separate, isolated environment for running applications.
 
-This instruction applies specifically to the Dockerfile I provided and may differ with other Dockerfiles. The provided Dockerfile is tailored for training and inferencing Large Language Models (LLMs) using Hugging Face transformers, but it is not limited to this use case. The container includes Hugging Face transformers and PyTorch.
+This instruction applies specifically to the Dockerfile I provided and may differ with other Dockerfiles. The provided Dockerfile is tailored for training and inference of Large Language Models (LLMs) using Hugging Face transformers, but it is not limited to this use case. The container includes Hugging Face transformers and PyTorch.
 
 # Installation
 
