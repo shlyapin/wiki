@@ -14,6 +14,6 @@ email: alshlyapin.contact@gmail.com
 
 [LinkedIn](https://www.linkedin.com/in/alexander-shlyapin-11676681)
 
-[GitHub](https://github.com/alshlyapin)
+[GitHub](https://github.com/shlyapin)
 
-[Facebook](https://www.facebook.com/profile.php?id=100004139956689)
+[Facebook](https://www.facebook.com/alshlyapin)
