@@ -157,9 +157,9 @@ git reset --hard HEAD
 
 ```
 # first time (no origin yet)
-git remote add origin https://github.com/user/repo.git
+git remote add origin git@github.com:shlyapin/my_repo.git
 # second time and later (origin already exists)
-git remote set-url origin ssh://git@github.com:shlyapin/my_repo.git
+git remote set-url origin git@github.com:shlyapin/my_repo.git
 # check what's set
 git config --get remote.origin.url
 ```
