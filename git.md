@@ -4,9 +4,7 @@ layout: page
 permalink: /git
 ---
 
-# GitHub instruction for new repositories
-
-If you want to create a new repository on the command line
+# Create a new repository
 
 ```
 echo "# my_repo" >> README.md
@@ -18,7 +16,7 @@ git remote add origin git@github.com:shlyapin/my_repo.git
 git push -u origin main
 ```
 
-If you want to push an existing repository from the command line
+# Push an existing repository
 
 ```
 git remote add origin git@github.com:shlyapin/my_repo.git
@@ -26,93 +24,107 @@ git branch -M main
 git push -u origin main
 ```
 
-# Creating a new branch
+# Create a new branch
 
 ```
-git checkout -b <branch>
-# or
-git branch <branch>
-git checkout <branch>
+git checkout -b my_branch
 ```
 
-# Actions when changing something
+The command above is equivalent to these two commands:
+
+```
+git branch my_branch
+git checkout my_branch
+```
+
+# Make changes and push to GitHub (or an alternative)
 
 ```
 git add .
-git commit -m "<commit_message>"
-git push --set-upstream origin <branch>
-# After initial  --set-upstream, you can just use git push without --set-upstream
+git commit -m "Some commit message"
+git push --set-upstream origin my_branch
+# After the initial --set-upstream, you can just use git push without --set-upstream
 ```
 
-# Force git pull
+# Checkout a remote branch
 
 ```
-git reset --hard origin/master
+git checkout my_branch
+```
+
+# Reset a local branch to match the remote main branch
+
+**Warning**: it will discard all local changes.
+
+```
+git reset --hard origin/main
 ```
 
 # Rebase
 
+**Warning**: any command with `--force` is dangerous since it rewrites the commit history.
+
 ```
-git checkout master
+git checkout main
+git pull
+git checkout my_branch
+git rebase main
+git push --force
+```
+
+Alternatively, if you have multiple remotes:
+```
+git checkout main
 git pull
 git fetch origin
 git checkout my_branch
-git rebase origin/master # Rebases current branch onto origin/maste
+git rebase origin/main # Rebases the current branch onto origin/main.
 git push --force
 ```
 
-Alternatively, if only one remote
-```
-git checkout master
-git pull
-git checkout my_branch
-git rebase master
-git push --force
-```
-
-# Rename local and remote branch
+# Rename a local and remote branch
 
 ```
 # Rename the local branch to the new name
-git branch -m <old_branch_name> <new_branch_name>
+git branch -m old_branch_name new_branch_name
 
-git push origin --delete <old_branch_name>
+git push origin --delete old_branch_name
 
 # Prevent git from using the old name when pushing in the next step.
-# Otherwise, git will use the old upstream name instead of <new_name>.
-git branch --unset-upstream <new_branch_name>
+# Otherwise, git will use the old upstream name.
+git branch --unset-upstream new_branch_name
 
 # Push the new branch to remote
-git push origin <new_branch_name>
+git push origin new_branch_name
 
-# Reset the upstream branch for the new_name local branch
-git push origin -u <new_branch_name>
+# Reset the upstream branch for the new_branch_name local branch
+git push origin -u new_branch_name
 ```
 
 # Log
 
 ```
-# show 5 last commits in short form
+# show the 5 last commits in short form
 git log --pretty=oneline -n 5
 ```
 
 # Squash
 
 ```
-# squash last 3 commits
+# squash the last 3 commits
 git rebase -i HEAD~3
-git commit
+```
 
-# or
-
+Or
+```
+# squash the last 3 commits
 git reset --soft HEAD~3
-git commit
 ```
 
-# Roll back a commit
+# Roll back commits
 
 ```
-# remove 2 last commits
+# remove the 2 last commits
 git reset HEAD~2 
 ```
 
@@ -122,27 +134,22 @@ git reset HEAD~2
 git checkout HEAD -- my_file.txt
 ```
 
-# Remove branch locally and remotely
+# Remove a branch locally and remotely
 
 ```
-# delete branch locally
-git branch -d <branch>
+# delete the branch locally
+git branch -d my_branch
 
-# delete branch remotely
-git push origin --delete <branch>
-
-# reset to origin/master
-git reset --hard origin/master
+# delete the branch remotely
+git push origin --delete my_branch
 ```
 
-# Checkout a remote branch
+# Checkout a remote branch no matter what 
 
-Short version:
-```
-git checkout <branch>
-```
+When you try to checkout a remote branch, git won't allow you to do this if the changes in your current working directory would be overwritten by the checkout. The commands below checkout a remote branch despite it. Also, they remove all files (including files that are not under version control) in the directory that are not in the remote branch.
 
-Checkout a remote branch, delete all not commited files
+**Warning**: potentially dangerous. Read the comment above.
+
 ```
 git fetch
 git clean -xdf
@@ -153,43 +160,43 @@ git clean -xdf
 git reset --hard HEAD
 ```
 
-# Change URL of a remote repo
+# Change the URL of a remote repository
 
 ```
-# first time (no origin yet)
+# For the first time (no origin yet)
 git remote add origin git@github.com:shlyapin/my_repo.git
-# second time and later (origin already exists)
+# For the second time and later (origin already exists)
 git remote set-url origin git@github.com:shlyapin/my_repo.git
-# check what's set
+# To check what URL is set
 git config --get remote.origin.url
 ```
 
-# Solve git status shows all files as modified but the content is not changed
+# Solve when git status shows all files as modified but the content is not changed
 
 ```
-# solution (if it's caused by change of mode (chmod))
+# The solution (if it's caused by a change of mode (chmod))
 git config core.filemode false
 ```
 
-# Check difference between branches
+# Check the difference between branches
 
 ```
-git diff my_branch master -- file.py
+git diff my_branch main -- file.py
 ```
 
-# Merge into master
+# Merge into main
 
 ```
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 git merge my_branch
-git push origin master
+git push origin main
 ```
 
-# Compare a branch to master
+# Check the changes that occurred on my_branch since it diverged from main
 
 ```
-git diff master...my_branch
+git diff main...my_branch
 ```
 
 # Other
@@ -198,6 +205,6 @@ git diff master...my_branch
 # to abort rebase
 git rebase --abort 
 
-# show differences in comparison with the last commit
+# to show differences in comparison with the last commit
 git diff
 ```
