@@ -4,7 +4,7 @@ layout: page
 permalink: /contact
 ---
 
-email: alshlyapin.contact@gmail.com
+email: shlyapin.contact@gmail.com
 
 [X (Twitter)](https://twitter.com/alshlyapin)
 
