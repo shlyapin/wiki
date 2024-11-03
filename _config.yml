@@ -1,14 +1,9 @@
 title: Alexander Shlyapin's wiki
 description: Alexander Shlyapin's wiki
-theme: just-the-docs
-
+remote_theme: just-the-docs/just-the-docs
 url: https://wiki.shlyapin.com
-
 ga_tracking: G-TQC2SPHKLN
 
 plugins:
   - jekyll-redirect-from
-
-exclude:
-  - archive/*
-  - in_progress/*
+  - jekyll-remote-theme
