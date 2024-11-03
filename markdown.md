@@ -2,6 +2,7 @@
 title: Markdown
 layout: page
 permalink: /markdown
+nav_order: 6
 ---
 
 [Basic syntax](https://www.markdownguide.org/basic-syntax/)

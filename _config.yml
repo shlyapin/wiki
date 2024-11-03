@@ -8,3 +8,7 @@ ga_tracking: G-TQC2SPHKLN
 
 plugins:
   - jekyll-redirect-from
+
+exclude:
+  - archive/*
+  - in_progress/*

@@ -2,6 +2,7 @@
 title: Git
 layout: page
 permalink: /git
+nav_order: 3
 ---
 
 # Create a new repository

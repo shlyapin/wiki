@@ -2,6 +2,7 @@
 title: SSH
 layout: page
 permalink: /ssh
+nav_order: 5
 ---
 
 # Add SSH connection to config
