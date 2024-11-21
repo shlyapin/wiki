@@ -8,6 +8,10 @@ I'm Alexander Shlyapin and this is my personal wiki.
 
 ![My photo](/assets/images/4O4A5229.jpg){:width="600px"}
 
+Table of contents:
+* Table of contents
+{:toc}
+
 # Education
 
 ## Higher School of Economics, Moscow
@@ -136,6 +140,7 @@ I'm Alexander Shlyapin and this is my personal wiki.
 
 ## Judge, Formula Student Self-Driving Cars Competition (Perception)
 
+- 2022, 2023
 - Served as a judge on the country level (Russia) for perception systems in the self-driving car category of Formula Student, an international competition with over 100 university teams from across the globe, evaluating object detection, sensor integration, and overall system performance.
 
 
