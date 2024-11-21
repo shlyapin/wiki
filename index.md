@@ -60,7 +60,7 @@ Table of contents:
 - Computer Vision Engineer (Deep Learning), Perception Team.
 - May 2022 – January 2024.
 - **3D Object Detection:** Increased mean Average Precision (mAP) by 9% through adopting a new model architecture, which also demonstrated superior performance in visual evaluations. Modified an existing ROS node (a component of self-driving car software) to integrate with the new model, enabling real-time object detection, debugging, and evaluation during vehicle tests in real driving conditions. Technologies: PyTorch, Python, Robot Operating System (ROS).
-- **Lane Detection:** Led the full development lifecycle of a lane detection component, from model selection and data preparation to training and ROS node integration into self-driving software. Code was merged into the main branch following approval by a cross-functional team of about 8 engineers. Technologies: PyTorch, Python, ROS.
+- **Lane Detection:** Led the full development lifecycle of a lane detection component, from model selection and data preparation to training and ROS node integration into self-driving software. Code was merged into the main branch following approval by a cross-functional team of 8 engineers. Technologies: PyTorch, Python, ROS.
 - **2D Object Detection:** Trained a model from scratch on SberAutoTech dataset, improving both accuracy and processing speed. Technologies: PyTorch, Python.
 
 ## Huawei Russian Research Institute
@@ -112,7 +112,7 @@ Table of contents:
 ## wiki.shlyapin.com
 
 - 2024 – present.
-- Built a personal wiki to share my knowledge on various topics (Git, Docker, SSH, Markdown) with my subordinates at MiraMedix and the broader public. I plan to expand it with content on AI, LLM, Deep Learning, Data Science, Math, Computer Science, and more.
+- Built a personal wiki to share my knowledge on various topics (Git, Docker, SSH, Markdown) with my subordinates at MiraMedix and the broader public. I plan to expand it with content on LLM, AI, Deep Learning, Data Science, Math, Computer Science, and more.
 - Technologies: Jekyll, GitHub Pages, Markdown.
 
 ## Robot Car
