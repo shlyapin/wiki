@@ -5,6 +5,10 @@ permalink: /docker_train_and_inference_llms
 nav_order: 4
 ---
 
+Table of contents:
+* Table of contents
+{:toc}
+
 # Introduction
 
 [Link to GitHub with Dockerfile, requirements.txt, and the instructions](https://github.com/shlyapin/docker_train_and_inference_llms)

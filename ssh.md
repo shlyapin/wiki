@@ -5,6 +5,10 @@ permalink: /ssh
 nav_order: 5
 ---
 
+Table of contents:
+* Table of contents
+{:toc}
+
 # Add SSH connection to config
 
 You can use `ssh my_machine` instead of `ssh my_user@123.456.901.234` to connect to the machine. To do this you need to create or edit a config file for SSH. The path for a user is `~/.ssh/config`

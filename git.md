@@ -5,6 +5,10 @@ permalink: /git
 nav_order: 3
 ---
 
+Table of contents:
+* Table of contents
+{:toc}
+
 # Create a new repository
 
 ```
