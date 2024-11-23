@@ -55,7 +55,7 @@ Table of contents:
 - Guided and supported team members with Linux, Git, SSH, Python, PyTorch, Hugging Face, and development environment setup and usage.
 - Organized Jira for project management and Confluence for documentation, writing detailed instructions and guidelines, and maintaining the team's knowledge base.
 
-## SberAutoTech
+## Sber Automotive Technologies
 
 - Computer Vision Engineer (Deep Learning), Perception Team.
 - May 2022 – January 2024.
