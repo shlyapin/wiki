@@ -18,7 +18,7 @@ Table of contents:
 
 - Faculty of Computer Science, Moscow.
 - September 2022 – June 2024.
-- GPA: 4.81/5 or 3.85/4.
+- GPA: 4.80/5.00 or 3.80/4.00
 - **Thesis**: Tiny Language Models (Grade: 10/10)
     - Trained 32 GPT-2-like models with varying hyperparameters and architectures.
     - 3 models trained using Hugging Face.
