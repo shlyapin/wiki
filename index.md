@@ -61,13 +61,13 @@ Table of contents:
 - May 2022 – January 2024.
 - **3D Object Detection:** Increased mean Average Precision (mAP) by 9% through adopting a new model architecture, which also demonstrated superior performance in visual evaluations. Modified an existing ROS node (a component of self-driving car software) to integrate with the new model, enabling real-time object detection, debugging, and evaluation during vehicle tests in real driving conditions. Technologies: PyTorch, Python, Robot Operating System (ROS).
 - **Lane Detection:** Led the full development lifecycle of a lane detection component, from model selection and data preparation to training and ROS node integration into self-driving software. Code was merged into the main branch following approval by a cross-functional team of 8 engineers. Technologies: PyTorch, Python, ROS.
-- **2D Object Detection:** Trained a model from scratch on SberAutoTech dataset, improving both accuracy and processing speed. Technologies: PyTorch, Python.
+- **2D Object Detection:** Trained a model from scratch on the internal dataset, improving both accuracy and processing speed. Technologies: PyTorch, Python.
 
 ## Huawei Russian Research Institute
 
 - Computer Vision Researcher (Deep Learning), Intelligent Systems and Data Science Lab.
 - January 2022 – May 2022.
-- Contributed to the team that achieved the first place on the renowned nuScenes 3D object detection leaderboard by experimenting with architectures, refactoring codebase, and developing custom support scripts.
+- Contributed to the team that achieved the first place on the renowned nuScenes 3D object detection benchmark by experimenting with architectures, refactoring codebase, and developing custom support scripts.
 - Conducted weekly paper reviews and presentations, staying up to date with cutting-edge research; summarized and presented 1 research paper per week.
 - Technologies: PyTorch, Python.
 
@@ -75,7 +75,7 @@ Table of contents:
 
 - Computer Vision Researcher (Deep Learning), Visual Algorithm Lab.
 - March 2020 – January 2022.
-- **EDoF Deblur project:** Led the neural network development, designing and implementing all models independently, with a focus on GAN architectures. Technologies: TensorFlow, Convolutional Neural Networks (CNN), Generative Adversarial Networks (GAN).
+- **Extended Depth of Field Deblur project:** Led the neural network development, designing and implementing all models independently, with a focus on GAN architectures. Technologies: TensorFlow, Convolutional Neural Networks (CNN), Generative Adversarial Networks (GAN).
 - **Smart Autofocus project:** Proposed the project, aimed at tracking objects and predicting their movements in three dimensions. Independently worked on prediction algorithms and collaborated with a team on depth estimation from phase autofocus data. Technologies: Kalman Filter, NumPy, PyTorch, Python, Long Short-Term Memory (LSTM).
 - **Single-Shot Deblur project:** Developed the codebase from scratch, trained the most successful model, wrote custom scripts for synthetic data generation, and participated in real dataset collection. Technologies: TensorFlow, Python, CNN, Bash scripts.
 
